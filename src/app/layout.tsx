@@ -47,12 +47,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="zhOLN7elZTrCl0bO4wrCCEGV1_NOL2sBJrvD6XPVoFI"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900 dark:bg-black dark:text-white`}
       >
-        <CarritoProvider>
-          {children}
-        </CarritoProvider>
+        <CarritoProvider>{children}</CarritoProvider>
       </body>
     </html>
   );
