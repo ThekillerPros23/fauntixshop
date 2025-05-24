@@ -59,7 +59,7 @@ export default function Home() {
                 <h2 className="text-lg font-semibold text-gray-800 dark:text-white">{product.name}</h2>
                 <p className="text-gray-500 dark:text-gray-400 mb-4">{product.price}</p>
                 <button
-                  onClick={() => agregarAlCarrito(product)}
+                  onClick={() => agregarAlCarrito({ ...product, cantidad: 1 })}
                   className="w-full bg-black text-white font-semibold py-2 rounded-xl hover:bg-gray-800 transition"
                 >
                   Añadir al carrito
